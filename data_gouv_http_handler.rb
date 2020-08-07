@@ -1,6 +1,6 @@
 require 'net/http'
 
-class DataGouvApiHandler
+class DataGouvHTTPHandler
 
   DEFAULT_URI = "https://api-adresse.data.gouv.fr"
 

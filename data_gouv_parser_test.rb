@@ -1,14 +1,14 @@
 require "minitest/autorun"
-require_relative 'data_gouv_api_handler'
-require_relative "data_gouv_api_parser"
+require_relative 'data_gouv_http_handler'
+require_relative "data_gouv_parser"
 
 
-describe DataGouvApiParser do
+describe DataGouvParser do
 
   before do
     @address = "157 Boulevard Macdonald 75019 Paris"
-    response = DataGouvApiHandler.search("157 Boulevard Macdonald 75019 Paris")
-    @parser = DataGouvApiParser.new(response)
+    response = DataGouvHTTPHandler.search(@address)
+    @parser = DataGouvParser.new(response)
   end
 
   it "#feature_count must equal 1" do
