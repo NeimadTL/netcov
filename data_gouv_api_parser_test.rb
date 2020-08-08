@@ -1,6 +1,6 @@
 require "minitest/autorun"
 require_relative 'data_gouv_http_handler'
-require_relative "data_gouv_parser"
+require_relative "data_gouv_api_parser"
 
 
 describe DataGouvParser do

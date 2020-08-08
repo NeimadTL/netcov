@@ -1,6 +1,6 @@
 require 'json'
 
-class DataGouvParser
+class DataGouvAPIParser
 
   def initialize(response)
     @data = JSON.parse(response)
