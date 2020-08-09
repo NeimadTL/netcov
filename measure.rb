@@ -9,6 +9,8 @@ class Measure
 
   BOOLEANS_TABLE = {"0" => false, "1" => "true"}
 
+  attr_reader :provider, :x, :y
+
   def initialize(provider, x, y, second_gen, third_gen, fourth_gen)
     @provider = provider
     @x = x
