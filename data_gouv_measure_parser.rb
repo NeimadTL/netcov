@@ -1,6 +1,5 @@
 require "csv"
 require_relative "measure_serializer"
-# require_relative "measure"
 
 class DataGouvMeasureParser
   extend MeasureSerializer
