@@ -6,8 +6,7 @@ class NetworkCoverageMatcher
       {
         "Orange" => match_for(Measure::PROVIDERS_TABLE.key("Orange"), coordinates, measures),
         "SFR" => match_for(Measure::PROVIDERS_TABLE.key("SFR"), coordinates, measures),
-        # Issue with this one probablye due to the corrupted data on the last line of the csv file
-        # "Free" => match_for(Measure::PROVIDERS_TABLE.key("Free"), coordinates, measures)
+        "Free" => match_for(Measure::PROVIDERS_TABLE.key("Free"), coordinates, measures),
         "Bouygue" => match_for(Measure::PROVIDERS_TABLE.key("Bouygue"), coordinates, measures)
       }
     end

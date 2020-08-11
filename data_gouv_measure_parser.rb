@@ -20,7 +20,7 @@ class DataGouvMeasureParser
       elsif measure.provider.eql?(Measure::PROVIDERS_TABLE.key("SFR"))
         sfr_ary << measure
       elsif measure.provider.eql?(Measure::PROVIDERS_TABLE.key("Free"))
-        free_ary << measures
+        free_ary << measure
       elsif measure.provider.eql?(Measure::PROVIDERS_TABLE.key("Bouygue"))
         bouygue_ary << measure
       end
