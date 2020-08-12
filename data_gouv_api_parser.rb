@@ -17,7 +17,7 @@ class DataGouvAPIParser
   def coordinates_of(address)
     coordinates = {}
     features.each do |feature|
-       if address.match(feature["properties"]["label"])
+       if address.downcase.eql?(feature["properties"]["label"].downcase)
          coordinates["x"] = feature["properties"]["x"]
          coordinates["y"] = feature["properties"]["y"]
        end
