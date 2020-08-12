@@ -25,10 +25,10 @@ class DataGouvMeasureParser
         bouygue_ary << measure
       end
     end
-    @measures["20801"] = orange_ary
-    @measures["20810"] = sfr_ary
-    @measures["20815"] = free_ary
-    @measures["20820"] = bouygue_ary
+    @measures[Measure::PROVIDERS_TABLE.key("Orange")] = orange_ary
+    @measures[Measure::PROVIDERS_TABLE.key("SFR")] = sfr_ary
+    @measures[Measure::PROVIDERS_TABLE.key("Free")] = free_ary
+    @measures[Measure::PROVIDERS_TABLE.key("Bouygue")] = bouygue_ary
   end
 
 end
